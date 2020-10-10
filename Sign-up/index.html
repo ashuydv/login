@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <script src="https://kit.fontawesome.com/20c3a47add.js" crossorigin="anonymous"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn">
+        </div>
+        <button class="toggle-btn" onclick="login()">LogIn</button>
+        <button class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <img src="fb.png"></img>
+        <img src="tw.png"></img>
+        <img src="gp.png"></img>
+      </div>
+      <form class="input" id="login">
+        <input type="text" class="input-text" placeholder="User Id" required/>
+        <input type="password" class="input-text" placeholder="Password" required/>
+        <input type="checkbox" class="checkbox" /><span>Remember Password</span>
+        <button class="button" type="submit">Log In</button>
+      </form>
+       <form class="input" id="register">
+        <input type="text" class="input-text" placeholder="User Id" required/>
+        <input type="email" class="input-text" placeholder="E-mail id" required/>
+        <input type="password" class="input-text" placeholder="Password" required/>
+        <input type="checkbox" class="checkbox" /><span>I agree to the terms & conditions</span>
+        <button class="button" type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+  <!-- Project -->
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    
+    function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    
+    function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0";
+    }
+  </script>
+</body>
+
+</html>
